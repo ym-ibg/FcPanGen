@@ -1,0 +1,26 @@
+Plasma_B: Plasma B cells
+Memory_B: Memory B cells
+GermCent_B: Germinal center B cells
+Fol_B: Follicular B cells
+Th: T helper cells (CD4+)
+Th1: Type 1 T helper cells 
+Th2: Type 2 T helper cells 
+Th17: Type 17 T helper cells 
+Treg: Regulatory T cells
+Tfh: Follicular T helper cells
+CTL: Cytotoxic T cells (CD8+)
+gdT: gamma delta T cells
+NKT: Natural killer T cells
+cDC: Dentritic cells
+pDC: Plasmacytoid dendritic cell
+Mast: Mast cells
+Neu: Neutrophils
+Baso: Basophils
+Eos: Eosinophils
+M1: M1 macrophage
+M2: M2 macrophage
+Mono: Monocytes
+NK: Natural killer cells
+ILC1: Type 1 Innate lymphoid cells
+ILC2: Type 2 Innate lymphoid cells
+ILC3: Type 3 Innate lymphoid cells
