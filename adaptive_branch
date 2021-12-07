@@ -1,0 +1,63 @@
+B cells
+{Pan (CD19,CD20);
+	Plasma_B 
+		{ Surface(CD9,CD27,CD31,CD38,CD81,CD138,CD184,CD252,CD269);
+		  Intracellular/TF (BLIMP1; IRF4; XBP-1)};
+	Memory_B
+		{n=1, 2, 6, 7, 10;
+		 Surface (CD27; IgG; TLRn);
+		 Intracellular/TF (CBF1, Pax5, Spi-B)};
+	GermCent_B
+	{ Surface (CD45, CD81); 
+	  Intracellular/TF (AID,Bach2,Bcl-6,IRF8,NF-kappaB,Pax5)};
+	Fol_B
+	h= 'high expression';
+	{ Surface (CD21,CD22,CD27,CD23,CD24,CD40(h),CD45R,CD69(h),CD80(h),CD81,CD86,CD137,CD275,CD279,CD360,HLA-DR IgD IgM;	
+	  Intracellular/TF (Bcl-6,EBF1,FoxO1,Ikaros,Pax5)};}
+
+T cells
+{Pan (CD3, TCRb);
+	Th
+	{pan (CD4);
+		Th1 
+		{Surface (CD119,CD183,CD186,CD191,CD159,CD212,CD254,CD366);
+		 Intracellular/TF (T-bet,IFNg,IL2,TNFa/B)};
+		Th2 
+		{n=4,5,6,9,10,13,21;
+		 Surface (CD184,CD194,CD198,CD294,CD365,IL25R,IL33R);
+		 Intracellular/TF (ILn, GATA-3)};
+		Th17
+		{n=21,22,26;
+		 Surface (CD121a,CD161,CD196,CD360,CD212,IL23R);
+		 Intracellular/TF (IL17A/F,ILn)}
+		Tfh 
+		{Surface (CD183,CD185,CD278,CD279);
+		 Intracellular/TF (c-Maf,Bcl-6,IL21);}
+		Treg
+		{Surface (CD25,CD39,CD73,CD101,TIGIT);
+		 Intracellular/TF (IL10, TGFb,FoxP3)};}
+	CTL
+	{h='high expression'; l= 'low expression'; i='intermediate';
+	 pan (CD8);
+		Naive
+		{Surface (CD27,CD45RA,CD62L,CD127,CD197);
+		 Intracellular/TF(null)};
+		Eff
+		{Surface (CD25h,CD69h,CD122h,CD134,KLRG1);
+		 Intracellular/TF (IFNg,GranzymeA/B/K,IL2,Perforin,T-bet);}
+		EffMem
+		{Surface (CD44,CD45RO,CD62L(l),CD127(h),CD197l,KLRG1);
+		  Intracellular/TF (IFNg(h),TNFa,GranzymeB,T-bet);}
+		CentMem 
+		{Surface(CD27,CD28,CD45RO,CD62L,CD127,CD197);
+		 Intracellular/TF (T-bet,IFNg(i),TNFa(i));}}
+	NKT 
+	{n=4,10,13
+	 surface (CD8,CD56,CD161,6B11);
+	 Intracellular/TF (IL(n),PLZF, IFNg,TNFa);}
+	gdT
+	{surface (CD27,CD28,TCRgd);
+	 Intracellular/TF (GM-CSF,IFNg,IL4,IL5,IL17A,Perforin,GranzymeB,TNFa);}}
+	 
+
+		 

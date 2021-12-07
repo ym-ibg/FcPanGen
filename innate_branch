@@ -1,0 +1,54 @@
+DC
+{pan (CD11b,MHCII);
+	cDC
+	{n=1B,6,8,12,15,23;
+	 Surface (CD11c,CD49d,CD207,CD369);
+	 Intracellular/TF (IDO,IL(n), TLR9, CD135)};
+	pDC
+	{Surface (CD123,CD303,CD304,);
+	 Intracellular/TF (IFNa/b,CD287,IRF8,E2-2)}}
+Granulocytes
+{pan (CD11b,CD13)
+	Mast
+	{Surface (CD117,FceR1,CD9);
+	 Intracellular/TF (Cathepsin,Histamine,TNFa,IL4);}
+	Neu
+	{Surface (CD66b,CD15,CD17);
+	 Intracellular/TF (Elastase,TLR1,TLR9);}
+	Baso 
+	{Surface (CD123,CD218,CD282,FceR1);
+	 Intracellular/TF (Histamine,IL13,CCL3,TLR1,TLR9);}
+	Eos
+	{Surface (CD123,CD125,CD193);
+	 Intracellular/TF (EDN,EPX,MBPs)}}
+Macrophage/Monocyte	 
+{pan (CD11b);
+	Mac{
+		M1
+		{Surface (CD163,CD206,CD209,VSIG4);
+		 Intracellular/TF (STAT6,Arginase1,IL10,TGFb);}
+		M2
+		{n=6,12,23;
+		Surface (CD16,MHCII,CD86);
+		 Intracellular/TF (CD68,STAT1,IFNg,IDO,IL1a/b,IL(n),TNFa);}
+		Mono
+		{Surface (CD14,CD33,CD172a);
+		 Intracellular/TF(null);}}}
+NK
+{i=A,B,K,M;
+ Surface (CD11b,CD16,CD56,CD244);
+ Intracellular/TF (TOX, Granulysin, Granzyme(i),Perforin,IFNg,TNFa);}
+
+ILC
+{
+	ILC1
+	{Surface (CD56,CD103,CD183,CD335,CD336,CD337);
+	 Intracellular/TF (Id2,T-bet,CCL3,IFNg);}
+	ILC2
+	{n= 4,5,69,13;
+	 Surface (CD25,CD45,CD117,C127,CD161,CD184,CD186,CD278,IL25R);
+	 Intracellular/TF (Arginase1,GATA-3,Gfi1,Id2,RORa,TCF1);}
+	ILC3
+	{Surface (CD56,CD117,C127,CD335,CD336,CD337,IL23R);
+	 Intracellular/TF (AHR,Id2,RORgt,T-bet,TCF1,IL17A/F,IL22);}
+}
